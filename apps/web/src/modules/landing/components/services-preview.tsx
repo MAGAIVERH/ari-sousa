@@ -8,6 +8,7 @@ const SERVICES = [
     description:
       "Técnica refinada, preparação para competição e desenvolvimento físico no tatame.",
     accent: "border-brand-blue bg-brand-blue/10",
+    hoverOverlay: "bg-brand-blue/25",
     asset: SERVICE_MEDIA_ASSETS.jiuJitsu,
   },
   {
@@ -16,6 +17,7 @@ const SERVICES = [
     description:
       "Cenários urbanos reais, proteção efetiva e confiança para o dia a dia.",
     accent: "border-primary/30 bg-primary/5",
+    hoverOverlay: "bg-primary/20",
     asset: SERVICE_MEDIA_ASSETS.defesaPessoal,
   },
 ] as const;
@@ -34,8 +36,8 @@ export function ServicesPreview() {
           Duas frentes. Um padrão premium.
         </h2>
         <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground">
-          Contêineres de mídia em proporção 16:10 com parallax — prontos para
-          receber as fotos finais de alta definição.
+          Passe o mouse para revelar o contraste de cada modalidade — técnica no
+          tatame ou proteção urbana real.
         </p>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -46,6 +48,7 @@ export function ServicesPreview() {
               description={service.description}
               asset={service.asset}
               accentClass={service.accent}
+              hoverOverlayClass={service.hoverOverlay}
             />
           ))}
         </div>

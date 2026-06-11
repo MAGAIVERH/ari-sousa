@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 
 const NAV_ITEMS = [
+  { label: "Autoridade", href: "#autoridade" },
   { label: "Modalidades", href: "#modalidades" },
   { label: "Metodologia", href: "#metodologia" },
+  { label: "Depoimentos", href: "#depoimentos" },
   { label: "Agendar", href: "#agendar" },
 ] as const;
 
