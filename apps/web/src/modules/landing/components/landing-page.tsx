@@ -1,4 +1,5 @@
 import { AuthoritySection } from "@/modules/landing/components/authority-section";
+import { BookingSection } from "@/modules/landing/components/booking-section";
 import { LandingHeader } from "@/modules/landing/components/landing-header";
 import { MethodologySection } from "@/modules/landing/components/methodology-section";
 import { OutfitTransition } from "@/modules/landing/components/outfit-transition";
@@ -21,6 +22,7 @@ export function LandingPage() {
           <ServicesPreview />
           <MethodologySection />
           <TestimonialsSection />
+          <BookingSection />
         </main>
       </div>
     </SmoothScrollProvider>
