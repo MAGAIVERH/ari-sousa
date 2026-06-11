@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" fill="none" role="img" aria-label="Professor em rashguard Gracie Barra">
+  <defs>
+    <linearGradient id="bgRash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(222 55% 18%)" stop-opacity="0"/>
+      <stop offset="100%" stop-color="hsl(222 55% 8%)" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="rashBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(222 55% 16%)"/>
+      <stop offset="100%" stop-color="hsl(222 60% 8%)"/>
+    </linearGradient>
+    <linearGradient id="rashRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="hsl(0 78% 42%)"/>
+      <stop offset="100%" stop-color="hsl(0 85% 52%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#bgRash)"/>
+  <ellipse cx="300" cy="820" rx="180" ry="28" fill="hsl(222 47% 5%)" opacity="0.5"/>
+  <!-- shorts -->
+  <path d="M225 520 L205 760 L295 760 L305 520 Z" fill="hsl(222 47% 10%)"/>
+  <path d="M375 520 L395 760 L305 760 L295 520 Z" fill="hsl(222 47% 10%)"/>
+  <!-- rashguard torso -->
+  <path d="M185 285 Q300 245 415 285 L440 500 Q300 540 160 500 Z" fill="url(#rashBody)"/>
+  <!-- red shoulder panels Carlos Jr style -->
+  <path d="M185 290 L160 380 L210 400 L240 310 Z" fill="url(#rashRed)"/>
+  <path d="M415 290 L440 380 L390 400 L360 310 Z" fill="url(#rashRed)"/>
+  <!-- red side stripes -->
+  <path d="M175 420 L165 500 L195 505 L205 425 Z" fill="url(#rashRed)" opacity="0.9"/>
+  <path d="M425 420 L435 500 L405 505 L395 425 Z" fill="url(#rashRed)" opacity="0.9"/>
+  <!-- GB logo chest -->
+  <ellipse cx="300" cy="370" rx="48" ry="36" fill="hsl(0 78% 48%)" opacity="0.9"/>
+  <text x="300" y="378" text-anchor="middle" fill="hsl(0 0% 100%)" font-size="22" font-family="Arial,sans-serif" font-weight="bold">GB</text>
+  <text x="300" y="398" text-anchor="middle" fill="hsl(0 0% 100%)" font-size="10" font-family="Arial,sans-serif" letter-spacing="2">CARLOS JR</text>
+  <!-- arms -->
+  <path d="M165 310 Q115 390 125 470 L170 455 Q158 395 195 325 Z" fill="url(#rashBody)"/>
+  <path d="M435 310 Q485 390 475 470 L430 455 Q442 395 405 325 Z" fill="url(#rashBody)"/>
+  <path d="M125 400 L145 470 L170 460 L155 395 Z" fill="url(#rashRed)" opacity="0.8"/>
+  <path d="M475 400 L455 470 L430 460 L445 395 Z" fill="url(#rashRed)" opacity="0.8"/>
+  <!-- head same pose -->
+  <circle cx="300" cy="200" r="72" fill="hsl(28 30% 35%)"/>
+  <ellipse cx="300" cy="175" rx="78" ry="28" fill="hsl(28 25% 22%)"/>
+</svg>
