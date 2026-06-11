@@ -7,7 +7,7 @@ Plataforma premium para aulas particulares de Jiu-Jitsu e Defesa Pessoal. Landin
 - **Monorepo:** Turborepo + pnpm
 - **Frontend:** Next.js, React 19, TypeScript, Tailwind CSS
 - **Animações:** GSAP + Lenis Scroll (próximas fases)
-- **Backend:** PostgreSQL, Drizzle ORM (próximas fases)
+- **Backend:** PostgreSQL (Neon), Drizzle ORM
 
 ## Pré-requisitos
 
@@ -27,6 +27,11 @@ ari-sousa/
 └── README.md
 ```
 
+## Configuração
+
+1. Copie `.env.example` para `.env` na raiz do monorepo
+2. Preencha `DATABASE_URL` com a connection string do Neon
+
 ## Comandos
 
 ```bash
@@ -38,6 +43,11 @@ pnpm dev:web
 
 # Build de produção
 pnpm build
+
+# Banco de dados (Drizzle)
+pnpm db:generate   # gerar migrações
+pnpm db:push       # aplicar schema no Neon
+pnpm db:studio     # interface visual do banco
 ```
 
 ## Documentação
