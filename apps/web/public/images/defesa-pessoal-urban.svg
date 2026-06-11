@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" fill="none" role="img" aria-label="Defesa pessoal em cenário urbano">
+  <defs>
+    <linearGradient id="urbanSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(222 50% 12%)"/>
+      <stop offset="60%" stop-color="hsl(222 47% 7%)"/>
+      <stop offset="100%" stop-color="hsl(222 47% 5%)"/>
+    </linearGradient>
+    <linearGradient id="urbanGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(222 30% 14%)"/>
+      <stop offset="100%" stop-color="hsl(222 35% 8%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#urbanSky)"/>
+  <!-- buildings -->
+  <rect x="40" y="120" width="180" height="380" fill="hsl(222 40% 10%)" opacity="0.9"/>
+  <rect x="240" y="80" width="140" height="420" fill="hsl(222 38% 12%)" opacity="0.85"/>
+  <rect x="620" y="100" width="200" height="400" fill="hsl(222 40% 9%)" opacity="0.9"/>
+  <rect x="840" y="160" width="120" height="340" fill="hsl(222 38% 11%)" opacity="0.8"/>
+  <!-- windows -->
+  <g fill="hsl(38 92% 50%)" opacity="0.15">
+    <rect x="70" y="160" width="20" height="28"/><rect x="110" y="160" width="20" height="28"/>
+    <rect x="70" y="220" width="20" height="28"/><rect x="110" y="220" width="20" height="28"/>
+    <rect x="660" y="150" width="24" height="32"/><rect x="710" y="150" width="24" height="32"/>
+  </g>
+  <rect x="0" y="480" width="960" height="120" fill="url(#urbanGround)"/>
+  <!-- defender stance -->
+  <ellipse cx="480" cy="530" rx="70" ry="12" fill="hsl(222 47% 5%)" opacity="0.6"/>
+  <circle cx="480" cy="340" r="42" fill="hsl(28 30% 35%)"/>
+  <ellipse cx="480" cy="312" rx="46" ry="16" fill="hsl(28 25% 22%)"/>
+  <!-- athletic wear dark -->
+  <path d="M430 360 L410 470 L455 475 L470 370 Z" fill="hsl(222 47% 12%)"/>
+  <path d="M530 360 L550 470 L505 475 L490 370 Z" fill="hsl(222 47% 12%)"/>
+  <path d="M420 365 L540 365 L555 430 L405 430 Z" fill="hsl(222 40% 16%)"/>
+  <!-- guard up -->
+  <path d="M400 370 Q360 340 340 300 L375 290 Q395 325 420 355 Z" fill="hsl(28 30% 35%)"/>
+  <path d="M560 370 Q600 340 620 300 L585 290 Q565 325 540 355 Z" fill="hsl(28 30% 35%)"/>
+  <!-- red accent stripe -->
+  <rect x="468" y="365" width="24" height="65" rx="4" fill="hsl(0 78% 48%)" opacity="0.85"/>
+  <text x="48" y="56" fill="hsl(0 78% 48%)" font-family="Arial,sans-serif" font-size="14" font-weight="bold" letter-spacing="3">DEFESA PESSOAL</text>
+</svg>

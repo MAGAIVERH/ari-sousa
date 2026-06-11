@@ -5,7 +5,10 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
-    "dev:web": "pnpm --filter web dev"
+    "dev:web": "pnpm --filter web dev",
+    "db:generate": "pnpm --filter @ari-sousa/db db:generate",
+    "db:push": "pnpm --filter @ari-sousa/db db:push",
+    "db:studio": "pnpm --filter @ari-sousa/db db:studio"
   },
   "devDependencies": {
     "turbo": "^2.5.4"

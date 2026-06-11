@@ -1,3 +1,6 @@
+import { ServiceMediaCard } from "@/modules/landing/components/service-media-card";
+import { SERVICE_MEDIA_ASSETS } from "@/modules/landing/data/media-assets";
+
 const SERVICES = [
   {
     id: "jiu-jitsu",
@@ -5,6 +8,8 @@ const SERVICES = [
     description:
       "Técnica refinada, preparação para competição e desenvolvimento físico no tatame.",
     accent: "border-brand-blue bg-brand-blue/10",
+    hoverOverlay: "bg-brand-blue/25",
+    asset: SERVICE_MEDIA_ASSETS.jiuJitsu,
   },
   {
     id: "defesa-pessoal",
@@ -12,6 +17,8 @@ const SERVICES = [
     description:
       "Cenários urbanos reais, proteção efetiva e confiança para o dia a dia.",
     accent: "border-primary/30 bg-primary/5",
+    hoverOverlay: "bg-primary/20",
+    asset: SERVICE_MEDIA_ASSETS.defesaPessoal,
   },
 ] as const;
 
@@ -28,20 +35,21 @@ export function ServicesPreview() {
         <h2 className="mt-3 font-display text-4xl font-bold uppercase tracking-tight text-foreground sm:text-5xl">
           Duas frentes. Um padrão premium.
         </h2>
+        <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground">
+          Passe o mouse para revelar o contraste de cada modalidade — técnica no
+          tatame ou proteção urbana real.
+        </p>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {SERVICES.map((service) => (
-            <article
+            <ServiceMediaCard
               key={service.id}
-              className={`group rounded-2xl border p-8 transition-colors hover:border-primary/40 ${service.accent}`}
-            >
-              <h3 className="font-display text-2xl font-bold uppercase tracking-tight text-foreground">
-                {service.title}
-              </h3>
-              <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                {service.description}
-              </p>
-            </article>
+              title={service.title}
+              description={service.description}
+              asset={service.asset}
+              accentClass={service.accent}
+              hoverOverlayClass={service.hoverOverlay}
+            />
           ))}
         </div>
       </div>
