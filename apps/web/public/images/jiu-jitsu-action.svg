@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" fill="none" role="img" aria-label="Jiu-Jitsu em ação no tatame">
+  <defs>
+    <linearGradient id="tatameBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(222 55% 10%)"/>
+      <stop offset="100%" stop-color="hsl(222 47% 5%)"/>
+    </linearGradient>
+    <linearGradient id="tatameMat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(222 38% 18%)"/>
+      <stop offset="100%" stop-color="hsl(222 42% 12%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#tatameBg)"/>
+  <!-- tatame lines -->
+  <g opacity="0.15" stroke="hsl(0 0% 98%)" stroke-width="1">
+    <line x1="0" y1="420" x2="960" y2="420"/>
+    <line x1="0" y1="480" x2="960" y2="480"/>
+    <line x1="160" y1="380" x2="160" y2="600"/>
+    <line x1="480" y1="380" x2="480" y2="600"/>
+    <line x1="800" y1="380" x2="800" y2="600"/>
+  </g>
+  <rect x="0" y="380" width="960" height="220" fill="url(#tatameMat)"/>
+  <!-- athlete top (guard pass) -->
+  <ellipse cx="520" cy="340" rx="55" ry="22" fill="hsl(28 25% 22%)"/>
+  <circle cx="520" cy="300" r="38" fill="hsl(28 30% 35%)"/>
+  <path d="M470 320 Q420 360 400 420 L460 430 Q475 380 500 340 Z" fill="hsl(0 0% 96%)"/>
+  <path d="M560 320 Q610 350 630 400 L570 410 Q555 370 540 340 Z" fill="hsl(0 0% 96%)"/>
+  <path d="M460 330 L540 330 L560 420 L440 420 Z" fill="hsl(0 0% 98%)"/>
+  <path d="M490 330 L520 400 L550 330 Z" fill="hsl(222 60% 28%)"/>
+  <!-- athlete bottom -->
+  <circle cx="400" cy="390" r="32" fill="hsl(28 30% 35%)"/>
+  <path d="M350 400 Q320 440 310 500 L380 510 Q390 460 410 410 Z" fill="hsl(222 55% 16%)"/>
+  <path d="M450 400 Q500 430 520 490 L450 500 Q430 450 420 410 Z" fill="hsl(222 55% 16%)"/>
+  <!-- motion accent -->
+  <path d="M620 250 Q700 280 750 350" stroke="hsl(0 78% 48%)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <text x="48" y="56" fill="hsl(0 78% 48%)" font-family="Arial,sans-serif" font-size="14" font-weight="bold" letter-spacing="3">JIU-JITSU PRIVATE</text>
+</svg>

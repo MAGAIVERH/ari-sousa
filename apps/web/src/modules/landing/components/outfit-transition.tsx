@@ -8,9 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useGsapContext } from "@/hooks/use-gsap-context";
-
-const KIMONO_SRC = "/images/professor-kimono.svg";
-const RASHGUARD_SRC = "/images/professor-rashguard.svg";
+import { HERO_MEDIA_ASSETS } from "@/modules/landing/data/media-assets";
 
 const TITLE_WORDS = [
   "AULAS",
@@ -235,11 +233,12 @@ export function OutfitTransition({ className }: OutfitTransitionProps) {
               className="absolute inset-x-0 bottom-0 flex justify-center will-change-[opacity,transform] lg:justify-end"
             >
               <Image
-                src={KIMONO_SRC}
-                alt="Professor em kimono Gracie Barra"
-                width={600}
-                height={900}
+                src={HERO_MEDIA_ASSETS.kimono.src}
+                alt={HERO_MEDIA_ASSETS.kimono.alt}
+                width={HERO_MEDIA_ASSETS.kimono.width}
+                height={HERO_MEDIA_ASSETS.kimono.height}
                 priority
+                sizes="(max-width: 1024px) 80vw, 600px"
                 className="h-[min(58vh,560px)] w-auto object-contain object-bottom drop-shadow-[0_24px_80px_hsl(var(--brand-blue-deep)/0.8)] lg:h-[min(72vh,720px)]"
               />
             </div>
@@ -249,11 +248,12 @@ export function OutfitTransition({ className }: OutfitTransitionProps) {
               className="absolute inset-x-0 bottom-0 flex justify-center will-change-[opacity,transform] lg:justify-end"
             >
               <Image
-                src={RASHGUARD_SRC}
-                alt="Professor em rashguard Gracie Barra Carlos Jr"
-                width={600}
-                height={900}
+                src={HERO_MEDIA_ASSETS.rashguard.src}
+                alt={HERO_MEDIA_ASSETS.rashguard.alt}
+                width={HERO_MEDIA_ASSETS.rashguard.width}
+                height={HERO_MEDIA_ASSETS.rashguard.height}
                 priority
+                sizes="(max-width: 1024px) 80vw, 600px"
                 className="h-[min(58vh,560px)] w-auto object-contain object-bottom drop-shadow-[0_24px_80px_hsl(var(--primary)/0.35)] lg:h-[min(72vh,720px)]"
               />
             </div>
